@@ -1,6 +1,6 @@
-import React from 'react';
-import { Container, Row, Col, Button } from 'react-bootstrap';
-import { FaDownload } from 'react-icons/fa';
+import React from "react";
+import { Container, Row, Col, Button } from "react-bootstrap";
+import { FaDownload } from "react-icons/fa";
 
 const Home = () => {
   return (
@@ -12,17 +12,19 @@ const Home = () => {
             I'm Harshil Narkar, a passionate Java and Full Stack Developer.
           </p>
 
-          <Button
-            variant="light"
-            size="lg"
-            href="/path/to/Harshil_Narkar_Resume.pdf"
+          {/* Use <a> with Button styles */}
+          <a
+            href={`${process.env.PUBLIC_URL}/resume.pdf`}
+            download="resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            download
+            style={{ textDecoration: "none" }}
           >
-            <FaDownload className="me-2" />
-            Download Resume
-          </Button>
+            <Button variant="light" size="lg">
+              <FaDownload className="me-2" />
+              Download Resume
+            </Button>
+          </a>
         </Col>
       </Row>
     </Container>
