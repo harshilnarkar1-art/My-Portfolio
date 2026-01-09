@@ -14,8 +14,8 @@ const Home = () => {
 
           {/* Use <a> with Button styles */}
           <a
-            href={`${process.env.PUBLIC_URL}/resume.pdf`}
-            download="resume.pdf"
+            href={`${process.env.PUBLIC_URL}/BackedDeveloperResume.pdf`}
+            download="BackedDeveloperResume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             style={{ textDecoration: "none" }}
